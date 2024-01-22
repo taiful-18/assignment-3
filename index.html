@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hockeys</title>
-</head>
-<body>
-    <header>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- my collar -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                't-primary': '#FF4240',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .Manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="Manrope">
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <section>
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn glass text-base lg:text-4xl font-extrabold">hockey<span class="text-t-primary">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-xl font-bold text-t-primary">Home</a></li>
+                        <li><a class="text-xl font-normal">About</a></li>
+                        <li><a class="text-xl font-normal">Pages</a></li>
+                        <li><a class="text-xl font-normal">Blog</a></li>
+                        <li><a class="text-xl font-normal">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden lg:flex">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                    <a class="btn bg-t-primary px-6">Button</a>
+                </div>
+            </div>
+        </section>
     </header>
     <main>
 
@@ -16,4 +83,5 @@
 
     </footer>
 </body>
+
 </html>
