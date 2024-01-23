@@ -2,111 +2,165 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hockeys</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hockeys</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- my collar -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                't-primary': '#FF4240',
-              }
-            }
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- my collar -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            't-primary': '#FF4240',
           }
         }
-      </script>
-    <style>
-        .Manrope{
-            font-family: 'Manrope', sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .Manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
 </head>
 
 <body class="Manrope bg-white">
-    <header class="container mx-auto">
-        <!-- navbar -->
-        <section>
-            <div class="navbar">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52 bg-slate-300">
-                            <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">Home</a></li>
-                            <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">About</a></li>
-                            <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">Pages</a></li>
-                            <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">Blog</a></li>
-                            <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn glass text-base lg:text-4xl font-extrabold text-black capitalize">hockey<span class="text-t-primary">'</span>s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a class="text-xl font-bold text-t-primary">Home</a></li>
-                        <li><a class="text-xl font-normal text-[#424247]">About</a></li>
-                        <li><a class="text-xl font-normal text-[#424247]">Pages</a></li>
-                        <li><a class="text-xl font-normal text-[#424247]">Blog</a></li>
-                        <li><a class="text-xl font-normal text-[#424247]">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end gap-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden lg:flex">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                      </svg>
-                    <a class="btn bg-t-primary px-6 text-white">Get Ticket</a>
-                </div>
+  <header class="container mx-auto">
+    <!-- navbar -->
+    <section>
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-        </section>
-        <!-- banner section -->
-        <section class="mt-14">
-            <div class="carousel">
-                <div id="slide1" class="carousel-item relative w-full justify-center">
-                  <img src="Images/1.png" class="w-11/12" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full justify-center">
-                  <img src="Images/1.png" class="w-11/12" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div>
-              </div>
-            <div class="flex justify-center lg:justify-end mt-4">
-                <div class="bg-black w-11/12 lg:w-5/12 lg:mr-16 lg:-mt-56 z-10 h-auto lg:h-40 p-4 lg:p-10 rounded-2xl">
-                    <h1 class="text-white uppercase text-lg lg:text-xl">Meet all the heroes from the field</h1>
-                    <p class="text-white mt-4 text-sm lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52 bg-slate-300">
+              <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">Home</a></li>
+              <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">About</a></li>
+              <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">Pages</a></li>
+              <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">Blog</a></li>
+              <li><a href="#" class="border-b-2 border-t-primary text-[#424247]">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn glass text-base lg:text-4xl font-extrabold text-black capitalize">hockey<span
+              class="text-t-primary">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-xl font-bold text-t-primary">Home</a></li>
+            <li><a class="text-xl font-normal text-[#424247]">About</a></li>
+            <li><a class="text-xl font-normal text-[#424247]">Pages</a></li>
+            <li><a class="text-xl font-normal text-[#424247]">Blog</a></li>
+            <li><a class="text-xl font-normal text-[#424247]">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 hidden lg:flex">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+          <a class="btn bg-t-primary px-6 text-white">Get Ticket</a>
+        </div>
+      </div>
+    </section>
+    <!-- banner section -->
+    <section class="mt-14">
+      <div class="carousel">
+        <div id="slide1" class="carousel-item relative w-full justify-center">
+          <img src="Images/1.png" class="w-11/12" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full justify-center">
+          <img src="Images/slide-2_Hero.jpg" class="w-11/12" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center lg:justify-end mt-4">
+        <div class="bg-black w-11/12 lg:w-5/12 lg:mr-16 lg:-mt-56 z-10 h-auto lg:h-40 p-4 lg:p-10 rounded-2xl">
+          <h1 class="text-white uppercase text-lg lg:text-xl">Meet all the heroes from the field</h1>
+          <p class="text-white mt-4 text-sm lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="container mx-auto">
+    <!-- hockeys club section -->
+    <section class="pt-24">
+      <div class="text-center">
+        <h1 class="text-4xl text-black font-extrabold">Professional Hockeys Club</h1>
+        <p class="text-base text-[#13131899] font-medium mt-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit
+          nullam proin. </p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-3 lg:gap-7 mt-12">
+        <div>
+          <div class="card">
+            <figure class="px-10 pt-2 lg:px-10 lg:pt-10">
+              <div class="radial-progress text-t-primary" style="--value:87;" role="progressbar"><span class="text-black font-extrabold text-xl">87%</span></div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-black text-xl">Prayer Facility</h2>
+              <p class="text-[#13131899] font-normal">If a dog chews shoes whose shoes does he choose?</p>
             </div>
-        </section>
-    </header>
-    <main>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <figure class="px-10 pt-2 lg:px-10 lg:pt-10">
+              <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar"><span class="text-black font-extrabold text-xl">95%</span></div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-black text-xl">Experienced Coach</h2>
+              <p class="text-[#13131899] font-normal">If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <figure class="px-10 pt-2 lg:px-10 lg:pt-10">
+              <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar"><span class="text-black font-extrabold text-xl">90%</span></div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-black text-xl">Senior Player</h2>
+              <p class="text-[#13131899] font-normal">If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <figure class="px-10 pt-2 lg:px-10 lg:pt-10">
+              <div class="radial-progress text-t-primary" style="--value:80;" role="progressbar"><span class="text-black font-extrabold text-xl">80%</span></div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-black text-xl">Training Ground</h2>
+              <p class="text-[#13131899] font-normal">If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
 
-    </main>
-    <footer>
-
-    </footer>
+  </footer>
 </body>
 
 </html>
